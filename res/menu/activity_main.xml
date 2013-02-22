@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/menu_settings"/>
+    <item
+        android:id="@+id/menu_item_listdemo"
+        android:title="@string/listdemo">
+    </item>
+    <item
+        android:id="@+id/menu_item_tab"
+        android:title="@string/tab_example">
+    </item>
+    <item
+        android:id="@+id/menu_item_static_fragment"
+        android:title="@string/static_fragment">
+    </item>
+
+</menu>

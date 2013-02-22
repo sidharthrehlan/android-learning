@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FirstProject</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="listdemo">List Demo</string>
+    <string name="tab_example">Tab Example</string>
+    <string name="static_fragment">Static Fragment</string>
+
+</resources>
