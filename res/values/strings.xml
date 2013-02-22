@@ -7,5 +7,6 @@
     <string name="listdemo">List Demo</string>
     <string name="tab_example">Tab Example</string>
     <string name="static_fragment">Static Fragment</string>
+    <string name="fragment_tab">Fragment Tab</string>
 
 </resources>

@@ -67,6 +67,10 @@ public class Splash extends Activity implements OnClickListener, OnItemClickList
 		case R.id.menu_item_static_fragment:
 			startActivity(new Intent(this, RssfeedActivity.class));
 			return true;
+			
+		case R.id.item_menu_fragment_tab:
+			startActivity(new Intent(this,FragmentTabs.class));
+			return true;
 
 		default:
 			return super.onOptionsItemSelected(item);

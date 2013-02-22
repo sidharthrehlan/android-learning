@@ -20,13 +20,17 @@ public class FragmentTabs extends Activity {
 		bar.setDisplayOptions(0, ActionBar.DISPLAY_SHOW_TITLE);
 
 		Tab tab = bar.newTab();
-		tab.setText("Simple");
-		
-//		TabListener<ArtistFragment> listener = new TabListener<ArtistFragment>(this, "sample", ArtistFragment.class);
-//
-//		 tab.setTabListener(listener);
-
+		tab.setText("Detail");
+		TabListener<DetailFragment> listener1 = new TabListener<DetailFragment>(this, "Detail", DetailFragment.class);
+		tab.setTabListener(listener1);
 		bar.addTab(tab);
+		
+		
+		Tab tab2 = bar.newTab();
+		tab2.setText("List");
+		TabListener<MyListFragment> listener2 = new TabListener<MyListFragment>(this, "List", MyListFragment.class);
+		tab2.setTabListener(listener2);
+		bar.addTab(tab2);
 
 	}
 
