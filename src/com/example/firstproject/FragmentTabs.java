@@ -17,20 +17,47 @@ public class FragmentTabs extends Activity {
 		// return activity action bar
 		final ActionBar bar = getActionBar();
 		bar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
-		bar.setDisplayOptions(0, ActionBar.DISPLAY_SHOW_TITLE);
+		bar.setDisplayOptions(1, ActionBar.DISPLAY_SHOW_TITLE);
+		bar.setDisplayShowTitleEnabled(false);
+
 
 		Tab tab = bar.newTab();
-		tab.setText("Detail");
-		TabListener<DetailFragment> listener1 = new TabListener<DetailFragment>(this, "Detail", DetailFragment.class);
+		tab.setText("Song");
+		TabListener<SongFragment> listener1 = new TabListener<SongFragment>(this, "Song", SongFragment.class);
 		tab.setTabListener(listener1);
+		tab.setIcon(getResources().getDrawable(R.drawable.icon_music_tab));
+		
+	//	getResources().getDrawable(R.drawable.icon_photos_tab);
+		
+		
 		bar.addTab(tab);
 		
 		
 		Tab tab2 = bar.newTab();
-		tab2.setText("List");
-		TabListener<MyListFragment> listener2 = new TabListener<MyListFragment>(this, "List", MyListFragment.class);
+		tab2.setText("Video");
+		TabListener<VideoFragment> listener2 = new TabListener<VideoFragment>(this, "Video", VideoFragment.class);
 		tab2.setTabListener(listener2);
+		tab2.setIcon(getResources().getDrawable(R.drawable.icon_video_tab));
 		bar.addTab(tab2);
+		
+		Tab tab3 = bar.newTab();
+		tab3.setText("Photo");
+		TabListener<ImageFragment> listener3 = new TabListener<ImageFragment>(this, "Video", ImageFragment.class);
+		tab3.setTabListener(listener3);
+		tab3.setIcon(getResources().getDrawable(R.drawable.icon_photos_tab));
+		bar.addTab(tab3);
+		
+		Tab tab4 = bar.newTab();
+		tab4.setText("Song2");
+		TabListener<SongFragment> listener4 = new TabListener<SongFragment>(this, "Song2", SongFragment.class);
+		tab4.setTabListener(listener4);
+		bar.addTab(tab4);
+		
+		Tab tab5 = bar.newTab();
+		tab5.setText("Video2");
+		TabListener<VideoFragment> listener5 = new TabListener<VideoFragment>(this, "Video2", VideoFragment.class);
+		tab5.setTabListener(listener5);
+		bar.addTab(tab5);
 
 	}
 
